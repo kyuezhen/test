@@ -1,0 +1,56 @@
+1.  将tensorflow从1.12.0升级到1.2.1
+     	打开Anoconda Prompt
+	输入activate tensorflow进入到tensorflow环境
+	pip install tensorflow==1.2.1 --upgrade
+
+2.  查询tensorflow中的各个安装包版本
+	进入tensorflow环境
+	pip list
+
+3.  处理AttributeError: module 'scipy.misc' has no attribute 'imresize'问题
+	将tensorflow升级到1.2.1
+	原版本scipy版本1.4.1，将其卸载 pip uninstall scipy
+	重新安装scipy1.2.1， pip insatll scipy==1.2.1
+
+4.  安装keras
+	tensorflow版本1.2.1
+	进入tensorflow环境
+	pip install --upgrade keras==2.0.6
+	pip install --upgrade pydot
+
+5. 安装opencv
+                打开anaconda prompt
+	执行activate tensorflow进入tensorflow环境
+	pip install opencv-python
+	
+6.安装music21
+	打开anaconda prompt
+	进入tensorflow环境
+	pip install music21
+
+7.win10更新网络出现“无Internet,安全”问题
+	(1).开始---运行---regedit
+	(2).找到注册表键值 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services                                  \NIaSvc\Parameters\Internet
+	(3).双击HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NIaSvc                                     \Parameters\Internet窗口右侧中的“EnableActiveProbing"，然后将其值更改为0
+	(4).点击确定，然后重启计算机
+
+8.智能表情安装两个新的工具库
+	打开anaconda prompt
+	执行activate tensorflow命令
+	执行pip install emoji
+	执行pip install sklearn
+
+9.机器翻译安装新的工具库
+	打开anaconda prompt
+	执行activate tensorflow命令
+	执行pip install faker==2.0.3命令
+	执行pip install tqdm命令
+	执行pip install babel命令
+
+10.阻止win10系统更新
+	win+R打开窗口、
+	services.msc回车
+	找到Windows Update，双击
+	常规里面启动类型改为禁用，服务状态改为停止
+	恢复里面第一次失败改为无操作
+	按确定关闭窗口
